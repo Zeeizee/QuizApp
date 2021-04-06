@@ -1,5 +1,6 @@
 const correctAnswers = ['A', 'A', 'B', 'B'];
 const form = document.querySelector('.quiz-form');
+const specific = document.querySelector('.specific');
 const displayScore = document.querySelector('.student-score');
 
 console.log(displayScore);
@@ -20,7 +21,9 @@ form.addEventListener('submit', e => {
 
     });
     scrollTo(0, 0);
+
     displayScore.classList.remove('d-none');
+    specific.classList.remove('d-none');
     let i = 0
     const timer = setInterval(() => {
         console.log(i)
@@ -36,6 +39,11 @@ form.addEventListener('submit', e => {
     }, 10)
 
 
+
+})
+specific.addEventListener('click', e => {
+    specific.classList.add('d-none')
+    displayScore.classList.add('d-none');
 
 })
 // setTimeout(() => {
