@@ -1,9 +1,8 @@
-*{
+ *{
     margin: 0px;
     padding: 0px;
 
 }
-
 
 .student-score{
     
@@ -14,7 +13,7 @@
     left: 50%;
     transform: translate(-50%,-50%);
     border-radius: 10px;
-    animation: fadein 2s ease-in-out;
+    animation: fadein 1s ease-in-out;
     z-index: 2;
 }
 .specific{
